@@ -4,7 +4,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls" }
+local servers = { "html", "cssls", "pyright", "ruff"}
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
@@ -22,3 +22,26 @@ end
 --   on_init = nvlsp.on_init,
 --   capabilities = nvlsp.capabilities,
 -- }
+-- lspconfig.pyright.setup({
+--   on_attach = nvlsp.on_attach,
+--   on_init = nvlsp.on_init,
+--   capabilities = nvlsp.capabilities,
+--   filetypes = {"python"}
+-- })
+--
+-- lspconfig.pyre.setup({
+--   on_attach = nvlsp.on_attach,
+--   on_init = nvlsp.on_init,
+--   capabilities = nvlsp.capabilities,
+--   filetypes = {"python"}
+-- })
+--
+-- lspconfig.ruff_lsp.setup {
+--   init_options = {
+--     settings = {
+--       args = {},
+--     }
+--   }
+-- }
+
+--vim.api.nvim_set_keymap("n",)

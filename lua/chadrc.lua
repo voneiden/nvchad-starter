@@ -5,7 +5,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+	theme = "chadracula",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
@@ -13,4 +13,6 @@ M.base46 = {
 	-- },
 }
 
+--M.plugins = "plugins"
+M.lsp = { signature = false }
 return M
